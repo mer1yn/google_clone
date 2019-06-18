@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Google</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav>
+            <section class="nav_info">
+                <ul>
+                    <li>Gmail</li>
+                    <li>Imágenes</li>
+                    <li><i class="fas fa-th"></i></li>
+                    <li><i class="fas fa-user"></i></li>
+                </ul>
+            </section>
+        </nav>
+        <section class="main">
+            <img src="google2.0.0.jpg" alt="">
+            <div class="main_input">
+                <input type="text" id="search_input">
+                <div class="input_container" id="input_container"></div>
+                <i class="fas fa-microphone"></i>
+                <div class="list_container" id="list_container">
+                    <ul class="list" id="list">
+                        
+                    </ul>
+                    <div class="list_buttons">
+                            <button class="search_button" onclick="handleButtonClick(event)">
+                                Buscar con Google
+                            </button>
+                            <button class="lucky_button">
+                                Me siento con suerte
+                            </button>
+                    </div>
+                </div>
+            </div>
+            <div class="main_buttons">
+                <button class="search_button" id="search_button">
+                    Buscar con Google
+                </button>
+                <button class="lucky_button" id="lucky_button">
+                    Me siento con suerte
+                </button>
+            </div>
+        </section>
+        <footer>
+            <section class="footer_bar footer_country">
+                <ul class="info_left">
+                    <li>México</li>
+                </ul>
+            </section>
+            <section class="footer_bar footer_info">
+                <ul class="info_left">
+                    <li>Publicidad</li>
+                    <li>Negocios</li>
+                    <li>Acerca de</li>
+                    <li>Cómo funciona la Búsqueda</li>
+                </ul>
+                <ul class="info_right">
+                    <li>Privacidad</li>
+                    <li>Condiciones</li>
+                    <li>Preferencias</li>
+                </ul>
+            </section>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
